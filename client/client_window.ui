@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="input_mrssege">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>390</y>
+      <width>451</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_contact_button">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить контакт</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_contact_button">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>510</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Удалить контакт</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="send_message_button">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>510</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отправить сообщение</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_contacts">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Контакты:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_messages">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>История сообщений:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_input_mrssege">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>360</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ввод нового сообщения</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="contacts">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>291</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListView" name="messages">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>50</y>
+      <width>451</width>
+      <height>291</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>805</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="exit_menu"/>
+   </widget>
+   <widget class="QMenu" name="menu2">
+    <property name="title">
+     <string>Контакты</string>
+    </property>
+    <addaction name="add_contact_menu"/>
+    <addaction name="delete_contact_button_2"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="add_contact_menu">
+   <property name="text">
+    <string>Добавить контакт</string>
+   </property>
+  </action>
+  <action name="delete_contact_button_2">
+   <property name="text">
+    <string>Удалить контакт</string>
+   </property>
+  </action>
+  <action name="exit_menu">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

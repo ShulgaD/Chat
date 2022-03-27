@@ -1,0 +1,494 @@
+2021-12-19 14:25:50,254 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 14:25:50,300 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:21:06,819 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:21:06,871 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:21:15,598 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 53185) 
+2021-12-19 19:21:15,655 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 53186) 
+2021-12-19 19:21:15,655 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53185)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:21:15,656 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639930875.6115713, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA067GsmdkraDh1zzesCkf\nQMf0PnIH795uXdklmAYwL3dKAXQe5NreKyqIHYZP3svh6Zvjj9R6Tic8bUx1QkYf\nRkTSwcS9wUVnEvlACRQ5GhIP792t4XHVG0A5+fMB9styIZ/mZzR/VJfA4eh5ngg4\nvby4oqI0rQkuwB04IPPMLwTr7QZrRB09AS//pNi2ekY0HGEDprXTV02Gexeh2NP9\npeUtaGlh9altKWacbsX46Ey6JEtD+Pimsy6C7umcVSdHloFxzwSl4rNVZaMypFu2\nOePsOAHVIO5KsfUhDXxmgY+uRlEyKVVlLw2G7qR5/aNn7x+Ny41MrHWXlH5oGQLL\nyQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:21:15,656 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA067GsmdkraDh1zzesCkf\nQMf0PnIH795uXdklmAYwL3dKAXQe5NreKyqIHYZP3svh6Zvjj9R6Tic8bUx1QkYf\nRkTSwcS9wUVnEvlACRQ5GhIP792t4XHVG0A5+fMB9styIZ/mZzR/VJfA4eh5ngg4\nvby4oqI0rQkuwB04IPPMLwTr7QZrRB09AS//pNi2ekY0HGEDprXTV02Gexeh2NP9\npeUtaGlh9altKWacbsX46Ey6JEtD+Pimsy6C7umcVSdHloFxzwSl4rNVZaMypFu2\nOePsOAHVIO5KsfUhDXxmgY+uRlEyKVVlLw2G7qR5/aNn7x+Ny41MrHWXlH5oGQLL\nyQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:21:15,663 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:21:15,665 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '05e8277a991b801ece1d83bce2c2dbd510105a0452b80728a3a384dce3d67fa94b8a5aca0a75a299c79396166fda4d3f96a6015d38dbe46c1cb8332597d6ef55'} 
+2021-12-19 19:21:15,665 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53185)>, {'response': 511, 'bin': '05e8277a991b801ece1d83bce2c2dbd510105a0452b80728a3a384dce3d67fa94b8a5aca0a75a299c79396166fda4d3f96a6015d38dbe46c1cb8332597d6ef55'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:21:15,666 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53185)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:21:15,697 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 113, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 162, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 299, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:21:15,700 - server - INFO - server.py - Клиент ('127.0.0.1', 53185) отключился от сервера. 
+2021-12-19 19:21:16,215 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53186)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:21:16,216 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639930875.6665533, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm5a0G0Dg4CAQO06MLfiL\n4acPexTFKZ4FyTwCy9H2gIQhYvOvRnVEMUMmGZ8+J81Pqfe+bf11Qp1igCtsWl52\ndEkCvorCveR2FwBnfnfePOSiDGSF6imssAbJffJZJYoSkZVDfmoaZmuUS8uBbMCd\nUTjrHhQH7ctiv+vUd72meGaFkdD3kNQiaa06GRx0rT6jZSXred9xZnA14PoWRX6F\ngiwV0FpsUmaVkQQJ4XuO/HuHadUssonEetsVlJ3Wl3Fu5bPZfIgk5zgyhd4D7JWO\nxTP7/kbvDkCQP/HE+dh8cJClenu+Vjoyj3aqb7uA/oKz8o9YuaG9jiVpDFrIkxlR\nIwIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:21:16,216 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm5a0G0Dg4CAQO06MLfiL\n4acPexTFKZ4FyTwCy9H2gIQhYvOvRnVEMUMmGZ8+J81Pqfe+bf11Qp1igCtsWl52\ndEkCvorCveR2FwBnfnfePOSiDGSF6imssAbJffJZJYoSkZVDfmoaZmuUS8uBbMCd\nUTjrHhQH7ctiv+vUd72meGaFkdD3kNQiaa06GRx0rT6jZSXred9xZnA14PoWRX6F\ngiwV0FpsUmaVkQQJ4XuO/HuHadUssonEetsVlJ3Wl3Fu5bPZfIgk5zgyhd4D7JWO\nxTP7/kbvDkCQP/HE+dh8cJClenu+Vjoyj3aqb7uA/oKz8o9YuaG9jiVpDFrIkxlR\nIwIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:21:16,217 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:21:16,219 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': 'ac11f5ec90cc8232c14cac172f18db536703f6724e0e294849ef9401bd729b75f74d78b58fb2c5710521ae0b1c20e4bea90403ef902b257c8f1b13f1101617ff'} 
+2021-12-19 19:21:16,219 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53186)>, {'response': 511, 'bin': 'ac11f5ec90cc8232c14cac172f18db536703f6724e0e294849ef9401bd729b75f74d78b58fb2c5710521ae0b1c20e4bea90403ef902b257c8f1b13f1101617ff'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:21:16,219 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53186)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:21:16,271 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 113, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 162, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 299, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:21:16,272 - server - INFO - server.py - Клиент ('127.0.0.1', 53186) отключился от сервера. 
+2021-12-19 19:26:29,731 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:26:29,785 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:28:35,332 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:28:35,374 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:30:08,604 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:30:08,644 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:31:03,122 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:31:03,163 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:32:37,090 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:32:37,134 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:33:12,003 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:33:12,048 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:33:29,243 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:33:29,290 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:33:37,115 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57736) 
+2021-12-19 19:33:37,120 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57737) 
+2021-12-19 19:33:37,631 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57736)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:33:37,632 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639931617.128077, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm5a0G0Dg4CAQO06MLfiL\n4acPexTFKZ4FyTwCy9H2gIQhYvOvRnVEMUMmGZ8+J81Pqfe+bf11Qp1igCtsWl52\ndEkCvorCveR2FwBnfnfePOSiDGSF6imssAbJffJZJYoSkZVDfmoaZmuUS8uBbMCd\nUTjrHhQH7ctiv+vUd72meGaFkdD3kNQiaa06GRx0rT6jZSXred9xZnA14PoWRX6F\ngiwV0FpsUmaVkQQJ4XuO/HuHadUssonEetsVlJ3Wl3Fu5bPZfIgk5zgyhd4D7JWO\nxTP7/kbvDkCQP/HE+dh8cJClenu+Vjoyj3aqb7uA/oKz8o9YuaG9jiVpDFrIkxlR\nIwIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:33:37,632 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm5a0G0Dg4CAQO06MLfiL\n4acPexTFKZ4FyTwCy9H2gIQhYvOvRnVEMUMmGZ8+J81Pqfe+bf11Qp1igCtsWl52\ndEkCvorCveR2FwBnfnfePOSiDGSF6imssAbJffJZJYoSkZVDfmoaZmuUS8uBbMCd\nUTjrHhQH7ctiv+vUd72meGaFkdD3kNQiaa06GRx0rT6jZSXred9xZnA14PoWRX6F\ngiwV0FpsUmaVkQQJ4XuO/HuHadUssonEetsVlJ3Wl3Fu5bPZfIgk5zgyhd4D7JWO\nxTP7/kbvDkCQP/HE+dh8cJClenu+Vjoyj3aqb7uA/oKz8o9YuaG9jiVpDFrIkxlR\nIwIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:33:37,650 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:33:37,654 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '872e441aa03b0047fdf418747675404f70b87a9857f54973f2b73e4f179dd128325df9fc42551f99f11959a2af56a58af07d1f78723eb7405faaf0b6535b9644'} 
+2021-12-19 19:33:37,654 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57736)>, {'response': 511, 'bin': '872e441aa03b0047fdf418747675404f70b87a9857f54973f2b73e4f179dd128325df9fc42551f99f11959a2af56a58af07d1f78723eb7405faaf0b6535b9644'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:33:37,655 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57736)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:33:37,698 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 119, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 168, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 305, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:33:37,701 - server - INFO - server.py - Клиент ('127.0.0.1', 57736) отключился от сервера. 
+2021-12-19 19:33:37,701 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57737)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:33:37,702 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639931617.1310759, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA067GsmdkraDh1zzesCkf\nQMf0PnIH795uXdklmAYwL3dKAXQe5NreKyqIHYZP3svh6Zvjj9R6Tic8bUx1QkYf\nRkTSwcS9wUVnEvlACRQ5GhIP792t4XHVG0A5+fMB9styIZ/mZzR/VJfA4eh5ngg4\nvby4oqI0rQkuwB04IPPMLwTr7QZrRB09AS//pNi2ekY0HGEDprXTV02Gexeh2NP9\npeUtaGlh9altKWacbsX46Ey6JEtD+Pimsy6C7umcVSdHloFxzwSl4rNVZaMypFu2\nOePsOAHVIO5KsfUhDXxmgY+uRlEyKVVlLw2G7qR5/aNn7x+Ny41MrHWXlH5oGQLL\nyQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:33:37,702 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA067GsmdkraDh1zzesCkf\nQMf0PnIH795uXdklmAYwL3dKAXQe5NreKyqIHYZP3svh6Zvjj9R6Tic8bUx1QkYf\nRkTSwcS9wUVnEvlACRQ5GhIP792t4XHVG0A5+fMB9styIZ/mZzR/VJfA4eh5ngg4\nvby4oqI0rQkuwB04IPPMLwTr7QZrRB09AS//pNi2ekY0HGEDprXTV02Gexeh2NP9\npeUtaGlh9altKWacbsX46Ey6JEtD+Pimsy6C7umcVSdHloFxzwSl4rNVZaMypFu2\nOePsOAHVIO5KsfUhDXxmgY+uRlEyKVVlLw2G7qR5/aNn7x+Ny41MrHWXlH5oGQLL\nyQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:33:37,703 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:33:37,705 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '60c6b2db1bccf539d895a9022c5dde288bd53a791fb03cc801f6f7b05985a3db3cce1e42d41f642fb1cb819e40426344a55af211041a53da825fcce0b981767c'} 
+2021-12-19 19:33:37,705 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57737)>, {'response': 511, 'bin': '60c6b2db1bccf539d895a9022c5dde288bd53a791fb03cc801f6f7b05985a3db3cce1e42d41f642fb1cb819e40426344a55af211041a53da825fcce0b981767c'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:33:37,706 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57737)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:33:37,746 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 119, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 168, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 305, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:33:37,747 - server - INFO - server.py - Клиент ('127.0.0.1', 57737) отключился от сервера. 
+2021-12-19 19:34:41,044 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:34:41,126 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:35:32,780 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57016) 
+2021-12-19 19:35:32,924 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57017) 
+2021-12-19 19:35:32,924 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57016)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:35:32,925 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639931732.7909415, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:35:32,925 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:35:32,926 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:35:32,928 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '2c776e84bd5f02461afaebca0e946c37ab04ff690331753d5d46eafee98e2eb9318e97ad76f69f1483067661a05d0cfabe856768e90ac9ea9278a2d9293db075'} 
+2021-12-19 19:35:32,928 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57016)>, {'response': 511, 'bin': '2c776e84bd5f02461afaebca0e946c37ab04ff690331753d5d46eafee98e2eb9318e97ad76f69f1483067661a05d0cfabe856768e90ac9ea9278a2d9293db075'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:35:32,928 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57016)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:35:32,951 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 119, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 168, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 305, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:35:32,954 - server - INFO - server.py - Клиент ('127.0.0.1', 57016) отключился от сервера. 
+2021-12-19 19:35:33,466 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57017)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:35:33,467 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639931732.9348915, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:35:33,467 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:35:33,469 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:35:33,471 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': 'c6dae5e621c7a90859804c53f861456d38cf2e0c39ff66c525cafe0d60ca7fd32980d576fd0726200003dfc6a7e097c04534048e7428d7db56ab3c1e8975a284'} 
+2021-12-19 19:35:33,471 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57017)>, {'response': 511, 'bin': 'c6dae5e621c7a90859804c53f861456d38cf2e0c39ff66c525cafe0d60ca7fd32980d576fd0726200003dfc6a7e097c04534048e7428d7db56ab3c1e8975a284'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:35:33,472 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57017)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:35:33,516 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 119, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 168, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 305, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:35:33,516 - server - INFO - server.py - Клиент ('127.0.0.1', 57017) отключился от сервера. 
+2021-12-19 19:36:43,536 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 51116) 
+2021-12-19 19:36:43,536 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 51117) 
+2021-12-19 19:36:44,042 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1852, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51116)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:36:44,043 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639931803.5492692, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:36:44,043 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:36:44,045 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:36:44,047 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '30bafacd98c876d09bc6380ad96b7c8fb2561df2df4f58498bc9cd1ef6f2fba28fb351e3b687d31d37de53fb005a61e4d59e1af34bcab565a72194f26554f5a3'} 
+2021-12-19 19:36:44,047 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1852, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51116)>, {'response': 511, 'bin': '30bafacd98c876d09bc6380ad96b7c8fb2561df2df4f58498bc9cd1ef6f2fba28fb351e3b687d31d37de53fb005a61e4d59e1af34bcab565a72194f26554f5a3'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:36:44,048 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1852, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51116)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:36:44,086 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 119, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 168, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 305, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:36:44,087 - server - INFO - server.py - Клиент ('127.0.0.1', 51116) отключился от сервера. 
+2021-12-19 19:36:44,087 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51117)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:36:44,088 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639931803.5462706, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:36:44,088 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:36:44,089 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:36:44,091 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '580efb602fdad023d22f271e2c41165b8296485c31e4aab1b64dd553dcac9852c40137a12a63c21fba00d6134543eeb548f68a318201110ffbaf72bdadff9b41'} 
+2021-12-19 19:36:44,092 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51117)>, {'response': 511, 'bin': '580efb602fdad023d22f271e2c41165b8296485c31e4aab1b64dd553dcac9852c40137a12a63c21fba00d6134543eeb548f68a318201110ffbaf72bdadff9b41'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:36:44,092 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51117)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:36:44,132 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 119, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 168, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 305, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 18, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:36:44,133 - server - INFO - server.py - Клиент ('127.0.0.1', 51117) отключился от сервера. 
+2021-12-19 19:37:45,566 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:37:45,616 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:46:11,689 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:46:11,733 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:46:24,096 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 59892) 
+2021-12-19 19:46:24,099 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 59893) 
+2021-12-19 19:46:24,600 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59892)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:46:24,608 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639932384.1107886, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:46:24,609 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:46:24,615 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:46:24,618 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '72afc1e1095e177deb57475b2f18d8b3f20f8a3d4c50f6540334130df38ff449c85dfb46ff2d87d3779604a483b58a2f84d0d74c1600a3884fa42c624a6c1ca0'} 
+2021-12-19 19:46:24,619 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59892)>, {'response': 511, 'bin': '72afc1e1095e177deb57475b2f18d8b3f20f8a3d4c50f6540334130df38ff449c85dfb46ff2d87d3779604a483b58a2f84d0d74c1600a3884fa42c624a6c1ca0'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:46:24,620 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59892)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:46:24,656 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:46:24,659 - server - INFO - server.py - Клиент ('127.0.0.1', 59892) отключился от сервера. 
+2021-12-19 19:46:24,660 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59893)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:46:24,660 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639932384.1107886, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:46:24,660 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:46:24,662 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:46:24,664 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': 'ca250b888daaca32ba7f1d2694342b00c2241887c02b1dd819dae02a49dfefade1c2cdb264ac58616f88775e1e5076c4379fbb673e2d64f6c949cbabbf0cc350'} 
+2021-12-19 19:46:24,664 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59893)>, {'response': 511, 'bin': 'ca250b888daaca32ba7f1d2694342b00c2241887c02b1dd819dae02a49dfefade1c2cdb264ac58616f88775e1e5076c4379fbb673e2d64f6c949cbabbf0cc350'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:46:24,665 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59893)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:46:24,712 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:46:24,713 - server - INFO - server.py - Клиент ('127.0.0.1', 59893) отключился от сервера. 
+2021-12-19 19:48:30,396 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:48:30,444 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:48:36,658 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57611) 
+2021-12-19 19:48:36,660 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57612) 
+2021-12-19 19:48:37,164 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57611)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:48:37,172 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639932516.6692498, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:48:37,173 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuur6+KSWp97MRnfLvQYD\nULXMhlDr1zSSscZ1vIV5yAZH/+E2M3CqpllrHW1qLjnQEFYbUJK3rj2Dx9FFGnqh\n83NQ9l2pXn3b0PG+N3UWCrhn6XcjuqnBsgD0J4frPU1C+cpzT6qrHp0mHh7MUmsa\nZ+XDKuQXU/FCmhmh0sCl6qmUHc7z/sDnqrgjWtN5rSffTSV69m+o7D3qw8AonITq\n26bqXIUjfiKN63XBtqpLSvDl/oDhF4HAsaNB2bHlptGe0zj3Z5Aa9/YaM2v2sNU7\nIspywnIU75N78Y7knrbmtIOfMLm/zkhPjq/gOa3rs039PEJCu3th6hSI92HL8Ovw\ntQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:48:37,182 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:48:37,185 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '7c6026c985acc6d6c26d8f373ce2833bbb22e983090094ce9f4c916437c30a6362266f87a8a10be4fbb30e0633d1867c3892e19d7f89a4041d20c700bc1396fb'} 
+2021-12-19 19:48:37,186 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57611)>, {'response': 511, 'bin': '7c6026c985acc6d6c26d8f373ce2833bbb22e983090094ce9f4c916437c30a6362266f87a8a10be4fbb30e0633d1867c3892e19d7f89a4041d20c700bc1396fb'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:48:37,186 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57611)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:48:37,225 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:48:37,230 - server - INFO - server.py - Клиент ('127.0.0.1', 57611) отключился от сервера. 
+2021-12-19 19:48:37,230 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57612)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:48:37,231 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639932516.670251, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:48:37,232 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkVIopcg8tdhazOBurs9a\nie1V1n8ElPpR/K0emX5zWX/HZZJLJcIbxb2m4U1CCgWNGob9ynrNh3AJRCLCNnEc\nxEd0k7kwpajLoguIjRGi/+LyobHuHH9U2P5PvNB/ilapaZUAvOjeuEUs8Afy1Vx9\n7AiX+VE5pmZs9KfsGLgGSmzXlrIe716X/gM8xa5UJRIxbBPlbXKUbEvP4qWbSDvm\nt+HmcABCFnb1DWkFa9JwTdX1F8gKVOvWiFfyeNv6hslS4tkDOWNx4hR07hj8MFc0\nFBEn5gGhYJkGtwBZVz+JgaWPTMyZwFSXIvDrGIpzTeYHybKE66f5gu1lL6SDcUep\nHQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:48:37,233 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:48:37,235 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '251e64316f09dcc9615aa17548af36586568918ba88205899961bff9d8d4a870303cfc57cd96bf387a31b50dbfd00f49b9372f2ec63d980e804cd41dd3a12410'} 
+2021-12-19 19:48:37,235 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57612)>, {'response': 511, 'bin': '251e64316f09dcc9615aa17548af36586568918ba88205899961bff9d8d4a870303cfc57cd96bf387a31b50dbfd00f49b9372f2ec63d980e804cd41dd3a12410'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:48:37,236 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57612)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:48:37,268 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:48:37,269 - server - INFO - server.py - Клиент ('127.0.0.1', 57612) отключился от сервера. 
+2021-12-19 19:50:23,868 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 19:50:23,921 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 19:50:31,425 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57816) 
+2021-12-19 19:50:31,483 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 57817) 
+2021-12-19 19:50:31,484 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57816)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:50:31,489 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639932631.4362397, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopRzzLBb7BOtp2SJ4I6I\n6JkhaypK3+T8iCWWj5hwrA9MFvXkvc73cxbskWBYA7gjswFYLEXTK8tMrKUkpTMd\nLghZhl24bnhiqfAaVTlyxHLq2NOxTlr2YdwEqJniuABx9xsri8ooZwYfXz494K25\nqvWMe7FGEpXykIjViCjZOu+3tjzBNEbYfsIVPoVMmU0GWhtIKnDoPQOo5s7IVfyN\nriR/xNMNIooHKkxnbqVUjeyRASXIYyP9LjpCBj7V0zGrajJGoIJ/dCb7OgIAh/E+\ns1ldDIvRKsqopYDt3eqgGH96MLT1Qb5DWuUWEdzFqpIYIJ2hi0rQX5ttjJN5PUui\nxwIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:50:31,489 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopRzzLBb7BOtp2SJ4I6I\n6JkhaypK3+T8iCWWj5hwrA9MFvXkvc73cxbskWBYA7gjswFYLEXTK8tMrKUkpTMd\nLghZhl24bnhiqfAaVTlyxHLq2NOxTlr2YdwEqJniuABx9xsri8ooZwYfXz494K25\nqvWMe7FGEpXykIjViCjZOu+3tjzBNEbYfsIVPoVMmU0GWhtIKnDoPQOo5s7IVfyN\nriR/xNMNIooHKkxnbqVUjeyRASXIYyP9LjpCBj7V0zGrajJGoIJ/dCb7OgIAh/E+\ns1ldDIvRKsqopYDt3eqgGH96MLT1Qb5DWuUWEdzFqpIYIJ2hi0rQX5ttjJN5PUui\nxwIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:50:31,493 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:50:31,495 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': 'b5a3269392ef3c6eeca69d0e8b33634f7a2a9f2b4d16af13ee3855854f1098146ee779da8dbee6c9874974b8adda176b5d3a480aa1f9392e9f2056e15f3616f4'} 
+2021-12-19 19:50:31,495 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57816)>, {'response': 511, 'bin': 'b5a3269392ef3c6eeca69d0e8b33634f7a2a9f2b4d16af13ee3855854f1098146ee779da8dbee6c9874974b8adda176b5d3a480aa1f9392e9f2056e15f3616f4'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:50:31,496 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57816)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:50:31,524 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:50:31,527 - server - INFO - server.py - Клиент ('127.0.0.1', 57816) отключился от сервера. 
+2021-12-19 19:50:32,040 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57817)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:50:32,041 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639932631.494219, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucXHS814lDUEmuDe8ubA\nIEfJ8/Dg2sU4H/iKdEyRz+KvZaFo3OBgIeUEGQdpY9D1M9RDMdQIh9jdrpCCeFIo\noOGYAFzBx3EwofnNm7rfgqsCFJnj0ZRqdL/9w1VryfixOMDn1ME4XI+0ElP+Wfqq\n2t0XciXhAgdPfr/usytY+Sc4SXBNQI8iAbxqDGsxeJKzrMjyqXRiRvBemm9b+KkQ\nCPy6dKNyRAztX1w7ooM6mOoXxXGt21p0YUVrbVeIfnloCEIb8s1yMttKPd0w4+kt\nFuF3LIXlUTIJbZswG0WLsuqAsktLEFwNY5/fvI9f/G7+58kCBUhxwnC+DXCH0mR3\noQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 19:50:32,041 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucXHS814lDUEmuDe8ubA\nIEfJ8/Dg2sU4H/iKdEyRz+KvZaFo3OBgIeUEGQdpY9D1M9RDMdQIh9jdrpCCeFIo\noOGYAFzBx3EwofnNm7rfgqsCFJnj0ZRqdL/9w1VryfixOMDn1ME4XI+0ElP+Wfqq\n2t0XciXhAgdPfr/usytY+Sc4SXBNQI8iAbxqDGsxeJKzrMjyqXRiRvBemm9b+KkQ\nCPy6dKNyRAztX1w7ooM6mOoXxXGt21p0YUVrbVeIfnloCEIb8s1yMttKPd0w4+kt\nFuF3LIXlUTIJbZswG0WLsuqAsktLEFwNY5/fvI9f/G7+58kCBUhxwnC+DXCH0mR3\noQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 19:50:32,043 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 19:50:32,045 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': 'deba64c3260f32e339fcd6d364a4e0e9c5fa55ca0771bc7a1b49736ab65b3b761a810ff20fa9c04fb4d35a0b9c9beb564fc66d763caec64ad0620e1ac5a70288'} 
+2021-12-19 19:50:32,045 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57817)>, {'response': 511, 'bin': 'deba64c3260f32e339fcd6d364a4e0e9c5fa55ca0771bc7a1b49736ab65b3b761a810ff20fa9c04fb4d35a0b9c9beb564fc66d763caec64ad0620e1ac5a70288'}) , {}. Вызов из модуля common.utils 
+2021-12-19 19:50:32,046 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57817)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 19:50:32,088 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 19:50:32,089 - server - INFO - server.py - Клиент ('127.0.0.1', 57817) отключился от сервера. 
+2021-12-19 20:11:10,071 - server - DEBUG - decos.py - Была вызвана функция arg_parser c параметрами ('7777', '') , {}. Вызов из модуля __main__ 
+2021-12-19 20:11:10,110 - server - INFO - server.py - Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2021-12-19 20:11:15,674 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 59541) 
+2021-12-19 20:11:15,679 - server - INFO - server.py - Установлено соедение с ПК ('127.0.0.1', 59542) 
+2021-12-19 20:11:16,188 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59541)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 20:11:16,193 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639933875.6853983, 'user': {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucXHS814lDUEmuDe8ubA\nIEfJ8/Dg2sU4H/iKdEyRz+KvZaFo3OBgIeUEGQdpY9D1M9RDMdQIh9jdrpCCeFIo\noOGYAFzBx3EwofnNm7rfgqsCFJnj0ZRqdL/9w1VryfixOMDn1ME4XI+0ElP+Wfqq\n2t0XciXhAgdPfr/usytY+Sc4SXBNQI8iAbxqDGsxeJKzrMjyqXRiRvBemm9b+KkQ\nCPy6dKNyRAztX1w7ooM6mOoXxXGt21p0YUVrbVeIfnloCEIb8s1yMttKPd0w4+kt\nFuF3LIXlUTIJbZswG0WLsuqAsktLEFwNY5/fvI9f/G7+58kCBUhxwnC+DXCH0mR3\noQIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 20:11:16,194 - server - DEBUG - server.py - Start auth process for {'account_name': 'test2', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucXHS814lDUEmuDe8ubA\nIEfJ8/Dg2sU4H/iKdEyRz+KvZaFo3OBgIeUEGQdpY9D1M9RDMdQIh9jdrpCCeFIo\noOGYAFzBx3EwofnNm7rfgqsCFJnj0ZRqdL/9w1VryfixOMDn1ME4XI+0ElP+Wfqq\n2t0XciXhAgdPfr/usytY+Sc4SXBNQI8iAbxqDGsxeJKzrMjyqXRiRvBemm9b+KkQ\nCPy6dKNyRAztX1w7ooM6mOoXxXGt21p0YUVrbVeIfnloCEIb8s1yMttKPd0w4+kt\nFuF3LIXlUTIJbZswG0WLsuqAsktLEFwNY5/fvI9f/G7+58kCBUhxwnC+DXCH0mR3\noQIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 20:11:16,199 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 20:11:16,201 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': '91f92b511d55a1360a24e30f9fe8776c6ad80b5c8f3fcb19d844fd80bc6178eae03acea29ed4145a1eaed7490102bad17f8e52dfa61c018356866b6567c14feb'} 
+2021-12-19 20:11:16,201 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59541)>, {'response': 511, 'bin': '91f92b511d55a1360a24e30f9fe8776c6ad80b5c8f3fcb19d844fd80bc6178eae03acea29ed4145a1eaed7490102bad17f8e52dfa61c018356866b6567c14feb'}) , {}. Вызов из модуля common.utils 
+2021-12-19 20:11:16,202 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59541)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 20:11:16,254 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 20:11:16,257 - server - INFO - server.py - Клиент ('127.0.0.1', 59541) отключился от сервера. 
+2021-12-19 20:11:16,257 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59542)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 20:11:16,257 - server - DEBUG - server.py - Разбор сообщения от клиента : {'action': 'presence', 'time': 1639933875.6893961, 'user': {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopRzzLBb7BOtp2SJ4I6I\n6JkhaypK3+T8iCWWj5hwrA9MFvXkvc73cxbskWBYA7gjswFYLEXTK8tMrKUkpTMd\nLghZhl24bnhiqfAaVTlyxHLq2NOxTlr2YdwEqJniuABx9xsri8ooZwYfXz494K25\nqvWMe7FGEpXykIjViCjZOu+3tjzBNEbYfsIVPoVMmU0GWhtIKnDoPQOo5s7IVfyN\nriR/xNMNIooHKkxnbqVUjeyRASXIYyP9LjpCBj7V0zGrajJGoIJ/dCb7OgIAh/E+\ns1ldDIvRKsqopYDt3eqgGH96MLT1Qb5DWuUWEdzFqpIYIJ2hi0rQX5ttjJN5PUui\nxwIDAQAB\n-----END PUBLIC KEY-----'}} 
+2021-12-19 20:11:16,258 - server - DEBUG - server.py - Start auth process for {'account_name': 'test1', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopRzzLBb7BOtp2SJ4I6I\n6JkhaypK3+T8iCWWj5hwrA9MFvXkvc73cxbskWBYA7gjswFYLEXTK8tMrKUkpTMd\nLghZhl24bnhiqfAaVTlyxHLq2NOxTlr2YdwEqJniuABx9xsri8ooZwYfXz494K25\nqvWMe7FGEpXykIjViCjZOu+3tjzBNEbYfsIVPoVMmU0GWhtIKnDoPQOo5s7IVfyN\nriR/xNMNIooHKkxnbqVUjeyRASXIYyP9LjpCBj7V0zGrajJGoIJ/dCb7OgIAh/E+\ns1ldDIvRKsqopYDt3eqgGH96MLT1Qb5DWuUWEdzFqpIYIJ2hi0rQX5ttjJN5PUui\nxwIDAQAB\n-----END PUBLIC KEY-----'} 
+2021-12-19 20:11:16,259 - server - DEBUG - server.py - Correct username, starting passwd check. 
+2021-12-19 20:11:16,260 - server - DEBUG - server.py - Auth message = {'response': 511, 'bin': 'da23a43c8247d663348e1867703732a5280fc7c06f4fb3b5b0d7b5b98aa2c404c5aa8c59ecbe9907f7524129aadf61edd73210dda8bd95c5c6ee818f570e207f'} 
+2021-12-19 20:11:16,261 - server - DEBUG - decos.py - Была вызвана функция send_message c параметрами (<socket.socket fd=1496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59542)>, {'response': 511, 'bin': 'da23a43c8247d663348e1867703732a5280fc7c06f4fb3b5b0d7b5b98aa2c404c5aa8c59ecbe9907f7524129aadf61edd73210dda8bd95c5c6ee818f570e207f'}) , {}. Вызов из модуля common.utils 
+2021-12-19 20:11:16,261 - server - DEBUG - decos.py - Была вызвана функция get_message c параметрами (<socket.socket fd=1496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59542)>,) , {}. Вызов из модуля common.utils 
+2021-12-19 20:11:16,303 - server - DEBUG - server.py - Getting data from client exception. 
+Traceback (most recent call last):
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 122, in run
+    self.process_client_message(get_message(client_with_message), client_with_message)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 65, in checker
+    return func(*args, **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 174, in process_client_message
+    self.autorize_user(message, client)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\server.py", line 311, in autorize_user
+    ans = get_message(sock)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\decos.py", line 26, in log_saver
+    ret = func_to_log(*args , **kwargs)
+  File "D:\Учёба\Базы данных и PyQT\Lesson7\Lesson_7_Shulga\common\utils.py", line 13, in get_message
+    response = json.loads(json_response)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-12-19 20:11:16,304 - server - INFO - server.py - Клиент ('127.0.0.1', 59542) отключился от сервера. 
